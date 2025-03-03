@@ -15,6 +15,6 @@ Node::Node(){
 
 void LinkedList::insert(int Data){
     Node* newnode = new Node();
-    newnode->next = head;
+    newnode->next = head; 
     newnode = head;
 }
