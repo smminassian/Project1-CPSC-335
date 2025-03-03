@@ -3,16 +3,20 @@
 
 
 
-struct Node{
+class Node
+{
+
+public:
     int data;
     Node* next;
+    Node(){};
 };
 
 class LinkedList
 {
 public:
     Node* head;
-    LinkedList() : head(nullptr) {};
+    LinkedList(){};
 
     void insert(int data);
     void print();
