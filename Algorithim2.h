@@ -9,16 +9,17 @@ class Node
 public:
     int data;
     Node* next;
-    Node(){};
+    Node(int data);
 };
 
 class LinkedList
 {
 public:
     Node* head;
-    LinkedList(){};
+    LinkedList();
 
     void insert(int data);
+    void extract(int data);
     void print();
 
 };
