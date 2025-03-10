@@ -19,8 +19,9 @@ public:
     LinkedList();
 
     void insert(int data);
-    void extract(int data);
+    void extractNReverse(int arr[], int size);
     void print();
+    void clear(Node* currentNode);
 
 };
 

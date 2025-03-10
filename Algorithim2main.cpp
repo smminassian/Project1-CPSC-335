@@ -6,20 +6,38 @@ using namespace std;
 
 int main() {
     LinkedList myList;
-    int num1[4];
-    int num2[4];
+    Node* currentNode;
+    int size = 4;
+    int num1[size];
+    int num2[size];
 
-    cout << "Enter numbers for 1st list" << endl;
-    
-    cout << "Now, enter numbers for 2nd list" << endl;
-    for(int jx = 0; jx < 4; jx++){
-        
-     
+    myList.insert(1);
+    myList.insert(3);
+    myList.insert(4);
+
+    //Current number is 431
+    myList.extractNReverse(num1, size);
+    cout << endl;
+
+    for(int px = 0; px < size; px++){
+        cout << num1[px] << " ";
     }
 
-    cout << "Here are the numbers in robot language:" << endl;
-    
+    //New number is 134 and we store that in num1
+   
+    //Now we clear the list
 
+    myList.clear(currentNode);
+
+
+
+
+    cout << "Here is the 2nd number in robot language: " << endl;
+    cout << "Now, enter numbers for 2nd list" << endl;
+    
+    myList.extractNReverse(num2, size);
+
+    cout << endl;
 
     return 0;
 }
