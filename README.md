@@ -1,5 +1,18 @@
 # Project1-CPSC-335
+Sebastien Minassian 
+Quynh Pronk 
 
+
+
+1) Open Algrithim2.h, Algorithim2.cpp, and Algorithim2main.cpp in ur IDE
+
+2) To run this code, you must have g++ installed
+
+3) Enter the commands:
+    g++ Algorithim2.cpp Algorithim2main.cpp -o program
+    ./program
+
+And you are good to go
 
 
 
