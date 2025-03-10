@@ -7,7 +7,7 @@ using namespace std;
 int main() {
     LinkedList myList;
     Node* currentNode;
-    int size = 4;
+    int size = 3;
     int num1[size];
     int num2[size];
 
@@ -22,17 +22,28 @@ int main() {
     for(int px = 0; px < size; px++){
         cout << num1[px] << " ";
     }
+    cout << endl;
+
 
     //New number is 134 and we store that in num1
    
     //Now we clear the list
 
-    myList.clear(currentNode);
+    myList.clear();
 
+    myList.insert(3);
+    myList.insert(4);
+    myList.insert(7);
 
+    //So now my current number is 743
 
+    myList.extractNReverse(num2, size);
 
-    
+    for(int zx = 0; zx < size; zx++){
+        cout << num2[zx] << " ";
+    }
+    cout << endl;
 
+    myList.print();
     return 0;
 }

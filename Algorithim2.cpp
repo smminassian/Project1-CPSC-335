@@ -20,17 +20,21 @@ void LinkedList::insert(int data){
 
 void LinkedList::print(){
     Node* temp = head;
+    if(temp == nullptr){
+        cout << "List is empty" << endl;
+    }
     while(temp != nullptr){
         cout << temp->data << " ";
         temp = temp->next;
     }
 
+
 }
 
-void LinkedList::clear(Node* currentNode){
-    currentNode = head;
+void LinkedList::clear(){
+    Node* currentNode = head;
     if(currentNode->next != nullptr){
-    clear(currentNode->next);
+    currentNode = currentNode->next;
     delete currentNode;
     }
 }

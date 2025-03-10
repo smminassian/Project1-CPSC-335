@@ -21,7 +21,7 @@ public:
     void insert(int data);
     void extractNReverse(int arr[], int size);
     void print();
-    void clear(Node* currentNode);
+    void clear();
 
 };
 
