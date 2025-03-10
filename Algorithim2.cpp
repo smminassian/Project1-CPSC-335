@@ -32,7 +32,7 @@ void LinkedList::clear(Node* currentNode){
     if(currentNode->next != nullptr){
     clear(currentNode->next);
     delete currentNode;
-}
+    }
 }
 
 

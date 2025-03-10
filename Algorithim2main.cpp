@@ -32,12 +32,7 @@ int main() {
 
 
 
-    cout << "Here is the 2nd number in robot language: " << endl;
-    cout << "Now, enter numbers for 2nd list" << endl;
     
-    myList.extractNReverse(num2, size);
-
-    cout << endl;
 
     return 0;
 }
