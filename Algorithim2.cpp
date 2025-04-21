@@ -53,14 +53,15 @@ void LinkedList::extractNReverse(int arr[], int size){
         current = current->next;
         ix++;
     }
-
-    int tempArr[size];          //I create a temporary array that will serve as the reverse array
-
+    int *tempArr = new int[size];         //I create a temporary array of the same size as the original array` 
+                                          
     for(int kx = 0; kx < size; kx++){ 
         tempArr[kx] = arr[size-kx-1];  //So this reverses the array and the reason why i have size - kx - 1 is because i start at 0
     }
     for(int jx = 0; jx < size; jx++){
         arr[jx] = tempArr[jx];           //I copy the reversed array into the original array
     }
+
+    delete[] tempArr;                   //I delete the temporary array to free up memory
 
 }
